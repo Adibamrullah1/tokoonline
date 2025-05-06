@@ -1,4 +1,6 @@
-#!/usr/bin/env sh 
-. "$(dirname "$0")/_/husky.sh"
+#!/bin/sh
+. "$(git rev-parse --show-toplevel)/.husky/_/husky.sh"
 
-npx lint-staged && npm run build
+echo "🔍 Running Linter + Prettier..."
+npm run lint
+npm run format

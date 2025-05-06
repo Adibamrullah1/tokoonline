@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "prepare": "husky",
-    "precommit": "lint-staged",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "firebase": "^11.6.1",
     "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -20,6 +22,7 @@
     "@swc/jest": "^0.2.38",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
